@@ -1,0 +1,102 @@
+:root {
+  --Header_Height: 5em;
+}
+
+* {
+  margin: 0;
+}
+
+.Main_Header {
+  position: fixed;
+  background-color: #127475;
+  text-align: right;
+  height: var(--Header_Height);
+  width: 100vw;
+}
+
+.Header_Text {
+  margin: calc(0.1 * var(--Header_Height)) 1em;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+
+  transition: all, 0.5s;
+}
+
+.Header_Text:hover {
+  font-size: 2.1em;
+  color: yellow;
+}
+
+.Content_Block {
+  height: calc(100vh);
+}
+
+#About_Me {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/LandScape.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  top: var(--Header_Height);
+  text-align: center;
+}
+
+.Content_Block_Title {
+  color: white;
+  text-align: left;
+  padding: 3em 2em;
+}
+
+#About_Me_Paragraph {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 12em;
+}
+
+#Projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/Projects_Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Project_Link {
+  text-decoration: none;
+  color: black;
+  width: 30%;
+  height: 50%;
+
+  display: -webkit-box;
+
+  top: 0em;
+}
+
+.Project_Block {
+  background-color: #0beaeebe;
+  border-radius: 1em;
+  border-color: silver;
+  border: solid;
+
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+
+  width: 100%;
+  height: 100%;
+
+  padding-left: 2em;
+  padding-right: 2em;
+  align-items: center;
+}
+
+.Project_Image {
+  width: 75%;
+}
