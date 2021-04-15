@@ -12,6 +12,10 @@
   text-align: right;
   height: var(--Header_Height);
   width: 100vw;
+
+  display: flex;
+
+  z-index: 99;
 }
 
 .Header_Text {
@@ -27,7 +31,7 @@
 }
 
 .Header_Text:hover {
-  font-size: 2.1em;
+  transform: scale(1.2);
   color: yellow;
 }
 
@@ -66,17 +70,20 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
 }
 
 .Project_Link {
   text-decoration: none;
   color: black;
-  width: 30%;
-  height: 50%;
-
-  display: -webkit-box;
-
-  top: 0em;
 }
 
 .Project_Block {
@@ -85,18 +92,17 @@
   border-color: silver;
   border: solid;
 
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1em;
-
   width: 100%;
   height: 100%;
-
-  padding-left: 2em;
-  padding-right: 2em;
-  align-items: center;
 }
 
 .Project_Image {
-  width: 75%;
+  width: 100%;
+  height: 50%;
+  align-self: center;
+}
+
+.Project_Block:hover {
+  transform: scale(1.05);
+  transition: all, 0.5s;
 }
