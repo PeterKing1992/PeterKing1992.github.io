@@ -43,11 +43,25 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./images/LandScape.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-attachment: fixed;
   background-size: cover;
-  top: var(--Header_Height);
+  /* top: var(--Header_Height); */
   text-align: center;
+}
+
+#About_Me_Content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.About_Me_Content {
+  text-align: left;
+  color: white;
+  margin-left: 5em;
+  margin-right: 5em;
+
+  overflow: hidden;
 }
 
 .Content_Block_Title {
@@ -56,11 +70,22 @@
   padding: 3em 2em;
 }
 
+.Projects_Header {
+  padding: 0.5em;
+  background-color: #0beaeebe;
+  text-align: center;
+}
+
+.Arts_Header {
+  padding: 0.5em;
+  text-align: center;
+}
+
 #About_Me_Paragraph {
   color: white;
   text-align: center;
   font-size: 2em;
-  padding-top: 12em;
+  padding-top: 10%;
 }
 
 #Projects {
@@ -70,14 +95,34 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
 
+#Arts {
+  background-color: #20a4f3;
+  color: white;
+}
+
+.Arts_Wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.Projects_Wrapper {
   padding-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
   grid-gap: 2em;
 }
 
