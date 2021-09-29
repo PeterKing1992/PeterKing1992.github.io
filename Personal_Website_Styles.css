@@ -1,3 +1,296 @@
+<<<<<<< HEAD
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  --Header_Height: 5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  font-size: 1.2em;
+}
+
+.Main_Header {
+  background-color: #127475;
+}
+
+.Header_Text {
+  margin: calc(0.1 * var(--Header_Height)) 1em;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+
+  transition: all, 0.5s;
+}
+
+.Header_Text:hover {
+  transform: scale(1.2);
+  color: yellow;
+}
+
+.Content_Block {
+  height: calc(100vh);
+}
+
+#Introduction {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/LandScape.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+
+  /* top: var(--Header_Height); */
+  text-align: center;
+  z-index: 1;
+}
+
+#Introduction::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.Introduction_Container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: left;
+  color: white;
+
+  overflow: hidden;
+}
+
+.Content_Block_Title {
+  color: white;
+  text-align: left;
+  padding: 3em 2em;
+}
+
+.Section_Header {
+  padding: 0.5em;
+  /* background-color: #0beaeebe; */
+  background-color: #127475;
+  text-align: center;
+  font-size: 2em;
+}
+
+#Introduction_Paragraph {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+#About_Me {
+  background-color: #1d323e;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#About_Me .About_Me {
+  text-align: center;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#About_Me .About_Me .Column_Left {
+  align-items: center;
+}
+
+#About_Me .My_Photo img {
+  width: 360px;
+}
+
+#About_Me p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#Projects {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/Projects_Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+  background-color: #1d323e;
+  padding-bottom: 20px;
+}
+
+#Arts {
+  background-color: #1d323e;
+  color: white;
+}
+
+.Arts_Wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.List_of_Projects {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-gap: 2em;
+}
+
+.Project_Link {
+  text-decoration: none;
+  color: black;
+}
+
+.Project_Block {
+  background-color: #127475;
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Project_Image {
+  height: 50%;
+  align-self: center;
+}
+
+ul {
+  color: white;
+  justify-content: left;
+}
+
+.Project_Description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Project_Description_Block {
+  height: 50%;
+  overflow: hidden;
+}
+
+.Project_Block:hover {
+  transform: scale(1.05);
+  transition: all, 0.5s;
+}
+
+/*Work Experience*/
+#Work_Experience {
+  background-color: #1d323e;
+  padding: 40px;
+}
+
+#Work_Experience .Container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#Work_Experience .Work_Experience_Block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 100px;
+  grid-row-gap: 300px;
+}
+
+#Work_Experience .Work_Description {
+  justify-content: center;
+}
+
+#Work_Experience .Work_Photo {
+  align-items: center;
+  justify-content: center;
+}
+
+#Work_Experience .Work_Header {
+  color: white;
+  margin: 20px;
+}
+
+#Contact {
+  background-color: #127475;
+}
+
+#Contact .Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#Contact .Container .Links {
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#Contact p {
+  display: block;
+  color: white;
+}
+
+#Contact a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+#Contact a:hover {
+  color: yellow;
+}
+=======
 :root {
   --Header_Height: 5em;
 }
@@ -151,3 +444,4 @@ img {
   transform: scale(1.05);
   transition: all, 0.5s;
 }
+>>>>>>> 8336892e518101a81bb5931c912c794fadb82cc7
