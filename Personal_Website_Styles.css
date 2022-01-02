@@ -2,6 +2,7 @@
 
 :root {
   --Header_Height: 5em;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -20,7 +21,17 @@ li {
 }
 
 .Main_Header {
+  /* background-color: #127475; */
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  background-color: transparent;
+  /* height: 80px; */
+}
+
+.Fixed_Navbar {
   background-color: #127475;
+  position: fixed;
 }
 
 .Header_Text {
@@ -168,8 +179,9 @@ img {
   padding-right: 2em;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
 
   grid-gap: 2em;
 }
@@ -220,10 +232,10 @@ ul {
 /*Work Experience*/
 #Work_Experience {
   background-color: #1d323e;
-  padding: 40px;
 }
 
 #Work_Experience .Container {
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
